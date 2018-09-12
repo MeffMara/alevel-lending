@@ -48,12 +48,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  position: relative;
+  top: -34px;
   margin-bottom: 76px;
 }
 
@@ -77,16 +78,104 @@ nav.navbar-expand-lg {
 
 .about-as {
   margin-top: 129px;
+  min-height: 985px;
 }
 
-.about-as__title {
+.about-as .about-as__left .podlojka {
+  margin-top: 182px;
+  background: url("../img/podlojka1.png");
+  width: 479px;
+  height: 412px;
+}
+
+.about-as .about-as__left .podlojka .carousel-slide {
+  padding-bottom: -36px;
+}
+
+.about-as .about-as__left .podlojka .carousel-indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.about-as .about-as__left .podlojka .carousel-inner {
+  padding-bottom: 36px;
+  top: -30px;
+}
+
+.about-as .about-as__left .podlojka .carousel-inner .carousel-item img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 395px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-as .about-as__right {
+  margin-top: 149px;
+}
+
+.about-as .about-as__right .about-as__right__first-title,
+.about-as .about-as__right .about-as__right__second-title {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3e3f3f;
+  text-align: left;
+}
+
+.about-as .about-as__right .about-as__right__first-subtitle,
+.about-as .about-as__right .about-as__right__second-subtitle {
+  width: 492px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.about-as .about-as__right .about-as__right__second-title {
+  font-size: 17px;
+}
+
+.about-as__title,
+.works__title, .services__title {
   font-size: 38px;
 }
 
-.about-as__subtitle {
+.about-as__subtitle,
+.works__subtitle, .services__subtitle {
   font-size: 18px;
   color: #5e5f5f;
   text-transform: uppercase;
   letter-spacing: 0.2px;
+}
+
+.works {
+  margin-bottom: 122px;
+}
+
+.works .container {
+  margin-top: 122px;
+}
+
+.works .works-row .works__img {
+  margin-top: 15px;
+}
+
+.works .works-row .works__img img {
+  width: 365px;
+  padding-left: 5px;
+  height: 360px;
+}
+
+.services {
+  padding-top: 125px;
 }
 /*# sourceMappingURL=main.css.map */
