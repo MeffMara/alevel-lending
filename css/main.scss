@@ -13,6 +13,12 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+p{
+  font-family: 'Merriweather', serif;
+  text-align: center;
 }
 .btn{
   font-family: 'Montserrat', sans-serif;
@@ -23,6 +29,7 @@ h6 {
 
 // Header start
 .header {
+  padding-bottom: 76px;
   background: #eff0f2;
   width: 100%;
   height: 806px;
@@ -34,7 +41,11 @@ h6 {
     border: 2px solid #777879;
   }
   .juice-glass{
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
     align-self: flex-end;
+    margin-bottom: 76px;
   }
 }
 
@@ -46,7 +57,6 @@ nav.navbar-expand-lg {
 .header-title{
   margin-top: 193px;
   font-size: 45px;
-  text-transform: uppercase;  
   color: #505050;
   text-shadow: 8px 6px 5px rgba(150, 150, 150, 0.66);
   .header-title-color{
@@ -55,5 +65,22 @@ nav.navbar-expand-lg {
 }
 
 // Header end
+
+// About Us Start
+.about-as{
+  margin-top: 129px;
+}
+
+.about-as__title{
+  font-size: 38px;
+    
+}
+.about-as__subtitle{
+  font-size: 18px;
+  color: #5e5f5f;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+// About Us End
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,700');
