@@ -286,4 +286,150 @@ nav.navbar-expand-lg {
 }
 // Services End
 
+
+
+
+// Icon Sprite Start
+.more-logos-row{
+  a{
+    display: block;
+    margin: 0 auto;
+  }
+  .icon{
+    width: 128px;
+    height: 68px;
+    // float: left;
+    background: url(../img/more_logos.png)no-repeat;
+  }
+  .logo-rko-top{
+   background-position: -1020px 0px;
+    cursor: pointer;
+  }
+  .logo-audiopro-top{
+    background-position: -607px 0;
+    cursor: pointer;
+  }
+  .logo-infinity-top{
+    background-position: -811px 0;
+    cursor: pointer;
+  }
+  .logo-sport{
+    background-position: 0 0;
+    cursor: pointer;
+  }
+  .logo-swan{
+    background-position: -200px 0;
+    cursor: pointer;
+  }
+  .logo-swancer{
+    background-position: -405px 0;
+    cursor: pointer;
+  }
+  .logo-audiopro-down{
+    background-position: -607px 0;
+    cursor: pointer;
+  }
+  .logo-infinity-down{
+    background-position: -811px 0;
+    cursor: pointer;
+  }
+  .logo-rko-down{
+    background-position: -1020px 0px;
+    cursor: pointer;
+  }
+}
+
+// Icon Sprite End
+
+
+// Secton Contact Start
+.contact{
+  width: 100%;
+  height: 710px;
+  background: url(../img/christmas_snow_trees-wide.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  .contact__left{
+    width: 614px;
+    height: 460px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    margin: 0;
+  
+    .contact_form{
+      display: flex;
+      flex-direction: column;
+      width: 456px;
+      margin-left: 31px;
+      margin-top: 46px;
+      input,textarea{
+        width: 100%;
+        height: 45px;
+        padding-left: 4px;
+        border: 0;
+        border: none;
+	    border-bottom: 1px solid #888;
+      background: transparent;
+      color: white;
+
+
+        &::placeholder{
+          font-family: 'Raleway', sans-serif;
+          font-size: 15px;
+        }
+      }
+      textarea{
+        padding-top: 10px;
+        height: 147px;
+      }
+    }
+    button{
+      width: 244px;
+      height: 53px;
+      margin-top: 38px;
+      margin-left: 31px;
+      background: #6eeee4;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      border: 0;
+      border-radius: 2px;
+      text-transform: uppercase;
+
+    }
+  }
+}
+
+
+
+.contact__right{
+  width: 500px;
+  height: 460px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
+
+  p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: inherit;
+    padding: 0;
+    margin: 0;
+  }
+  .contact__right__address{
+    margin-top: 36px;
+    margin-left: 30px;
+  }
+  .map{
+    background: url(../img/GoogleMap.gif) no-repeat center;
+    background-size: cover;
+    width: 452px;
+    height: 224px;
+    margin: 0 auto;
+    margin-top: 23px;
+  }
+}
+// Secton Contact End
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,700');
