@@ -143,13 +143,15 @@ nav.navbar-expand-lg {
 }
 
 .about-as__title,
-.works__title,.services__title {
+.works__title,
+.services__title {
   font-size: 38px;
 
 }
 
 .about-as__subtitle,
-.works__subtitle,.services__subtitle {
+.works__subtitle,
+.services__subtitle {
   font-size: 18px;
   color: #5e5f5f;
   text-transform: uppercase;
@@ -161,6 +163,7 @@ nav.navbar-expand-lg {
 // Works Start
 .works {
   margin-bottom: 122px;
+
   .container {
     margin-top: 122px;
   }
@@ -168,172 +171,270 @@ nav.navbar-expand-lg {
   .works-row {
     .works__img {
       margin-top: 15px;
+
       img {
         width: 365px;
         // padding-left: 5px;
         height: 360px;
-        &:hover{
+
+        &:hover {
           background: black;
           opacity: 0.3;
           z-index: 3;
         }
-    
+
       }
     }
   }
 
- 
+
 }
 
 // Works End
 
-// Services Start
-.services{
-  padding-top: 125px;
+// new start
+.black-block-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  // margin-bottom: 10px;
 }
-.home_dietitian{
-  margin: 0;
-  padding: 0;
-  margin-bottom: 13px;
-  img:hover+.popup__home_dietitian{
-    display: block;
-  }
+
+.holder {
+  margin-bottom: 10px;
 }
-.popup__home_dietitian{
-  display: none;
-  position: absolute;
-  top: 0;
-  background: #71f5ea;
+
+.big-img1 {
+  position: relative;
+  background: url(../img/home_dietitian_sectionbg_1.jpg)no-repeat center;
+  background-size: cover;
   width: 653px;
   height: 420px;
-  
-  .popup__home_dietitian__title{
+
+  .block {
+    background: #71f6eb;
+
+    h4 {
+      margin-top: 63px;
+      margin-left: 68px;
+    }
+
+    p {
+      margin-left: 68px;
+      width: 468px;
+    }
+  }
+}
+
+.small-img1 {
+  position: relative;
+  background: url(../img/img-9.jpg)no-repeat center;
+  background-size: cover;
+  width: 472px;
+  height: 420px;
+
+  h4 {
+    margin-left: 67px;
+    margin-top: 184px;
+  }
+
+  p {
+    width: 310px;
+    margin-left: 67px;
+    margin-bottom: 47px;
+  }
+
+  a {
+    display: block;
+    margin-left: 67px;
+
+  }
+}
+
+.big-img2 {
+  position: relative;
+  background: url(../img/griego3_1x.jpg)no-repeat center;
+  background-size: cover;
+  width: 653px;
+  height: 420px;
+
+  h4 {
+    margin-top: 165px;
+    margin-left: 65px;
+  }
+
+  p {
+    width: 390px;
+    margin-left: 65px;
+    margin-bottom: 45px;
+  }
+
+  a {
+    margin-left: 65px;
+
+  }
+}
+
+.small-img2 {
+  position: relative;
+  background: url(../img/careers-00.jpg)no-repeat center;
+  background-size: cover;
+  width: 472px;
+  height: 420px;
+
+  h4 {
+    margin-top: 164px;
+    margin-left: 66px;
+  }
+
+  p {
+    width: 310px;
+    margin-left: 66px;
+    margin-bottom: 47px;
+  }
+
+  a {
+    margin-left: 66px;
+  }
+}
+
+.small-img3 {
+  position: relative;
+  background: url(../img/griego4_1x.jpg)no-repeat center;
+  background-size: cover;
+  width: 472px;
+  height: 420px;
+
+  h4 {
+    margin-left: 64px;
+    margin-top: 130px;
+  }
+
+  p {
+    width: 276px;
+    margin-left: 64px;
+    margin-bottom: 58px;
+  }
+
+  a {
+    margin-left: 64px;
+  }
+}
+
+
+.big-img3 {
+  position: relative;
+  background: url(../img/blog-3.jpg)no-repeat center;
+  background-size: cover;
+  width: 653px;
+  height: 420px;
+
+  h4 {
+    margin-top: 130px;
+    margin-left: 69px;
+  }
+
+  p {
+    margin-left: 69px;
+    width: 390px;
+    margin-bottom: 59px;
+  }
+
+  a {
+    margin-left: 69px;
+  }
+}
+
+.block {
+  position: absolute;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+
+  h4 {
     font-family: 'Merriweather', serif;
     font-size: 20px;
     text-align: inherit;
-    margin-top: 63px;
-    margin-left: 60px;
   }
-  .popup__home_dietitian__subtitle{
-    width: 474px;
+
+  p {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    color: #3b3937;
-    text-align: justify;
-    margin-left: 60px;
-  }
-  .popup__home_dietitian__close{
-    display: block;
-    width: 17px;
-    height: 17px;
-    margin-top: 75px;
-    margin-left: 60px;
-  }
-}
-
-.block2{
-  img:hover+.popup__block2{
-    display: block;
-  }
-  .popup__block2{
-    display: none;
-    position: absolute;
-    width: 472px;
-    min-height: 420px;
-    top: 0;
-    color: white;
     text-align: inherit;
-    background: rgba(0, 0, 0, 0.6);
+  }
 
-    h4{
-      font-family: 'Merriweather', serif;
-      font-weight: bold;
-      font-size: 20px;
-      text-align: inherit;
-      margin-left: 67px;
-      margin-top: 184px;
-      
-    }
-    p{
-      font-family: 'Raleway', sans-serif;
-      font-size: 16px;
-      text-align: inherit;
-      margin-left: 67px;
-    }
-    a{
-      font-family: 'Raleway', sans-serif;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: white;
-      margin-left: 67px;
-      &::after{
-        position: relative;
-        content: url(../img/arow-right.png);
-        width: 22px;
-        height: 15px;
-        left: 20px;
-      }
-    }
+  a {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
   }
 }
-.griego{
-  padding: 0;
-  
-  img{
-    background: #e2e2e2;
-    width: 665px;
-  }
+
+.holder:hover .block {
+  display: block;
 }
-// Services End
+
+// new end
+
 
 
 
 
 // Icon Sprite Start
-.more-logos-row{
-  a{
+.more-logos-row {
+  a {
     display: block;
     margin: 0 auto;
   }
-  .icon{
+
+  .icon {
     width: 128px;
     height: 68px;
     // float: left;
     background: url(../img/more_logos.png)no-repeat;
   }
-  .logo-rko-top{
-   background-position: -1020px 0px;
+
+  .logo-rko-top {
+    background-position: -1020px 0px;
     cursor: pointer;
   }
-  .logo-audiopro-top{
+
+  .logo-audiopro-top {
     background-position: -607px 0;
     cursor: pointer;
   }
-  .logo-infinity-top{
+
+  .logo-infinity-top {
     background-position: -811px 0;
     cursor: pointer;
   }
-  .logo-sport{
+
+  .logo-sport {
     background-position: 0 0;
     cursor: pointer;
   }
-  .logo-swan{
+
+  .logo-swan {
     background-position: -200px 0;
     cursor: pointer;
   }
-  .logo-swancer{
+
+  .logo-swancer {
     background-position: -405px 0;
     cursor: pointer;
   }
-  .logo-audiopro-down{
+
+  .logo-audiopro-down {
     background-position: -607px 0;
     cursor: pointer;
   }
-  .logo-infinity-down{
+
+  .logo-infinity-down {
     background-position: -811px 0;
     cursor: pointer;
   }
-  .logo-rko-down{
+
+  .logo-rko-down {
     background-position: -1020px 0px;
     cursor: pointer;
   }
@@ -343,47 +444,52 @@ nav.navbar-expand-lg {
 
 
 // Secton Contact Start
-.contact{
+.contact {
   width: 100%;
   height: 710px;
   background: url(../img/christmas_snow_trees-wide.png) no-repeat center;
   background-size: cover;
   z-index: -1;
-  .contact__left{
+
+  .contact__left {
     width: 614px;
     height: 460px;
     background: rgba(0, 0, 0, 0.6);
     padding: 0;
     margin: 0;
-  
-    .contact_form{
+
+    .contact_form {
       display: flex;
       flex-direction: column;
       width: 456px;
       margin-left: 31px;
       margin-top: 46px;
-      input,textarea{
+
+      input,
+      textarea {
         width: 100%;
         height: 45px;
         padding-left: 4px;
         border: 0;
         border: none;
-	    border-bottom: 1px solid #888;
-      background: transparent;
-      color: white;
+        border-bottom: 1px solid #888;
+        background: transparent;
+        color: white;
 
 
-        &::placeholder{
+        &::placeholder {
           font-family: 'Raleway', sans-serif;
           font-size: 15px;
         }
       }
-      textarea{
+
+      textarea {
         padding-top: 10px;
         height: 147px;
       }
     }
-    button{
+
+    button {
       width: 244px;
       height: 53px;
       margin-top: 38px;
@@ -403,14 +509,14 @@ nav.navbar-expand-lg {
 
 
 
-.contact__right{
+.contact__right {
   width: 500px;
   height: 460px;
   background: rgba(0, 0, 0, 0.6);
   padding: 0;
   margin: 0;
 
-  p{
+  p {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     color: white;
@@ -418,11 +524,13 @@ nav.navbar-expand-lg {
     padding: 0;
     margin: 0;
   }
-  .contact__right__address{
+
+  .contact__right__address {
     margin-top: 36px;
     margin-left: 30px;
   }
-  .map{
+
+  .map {
     background: url(../img/GoogleMap.gif) no-repeat center;
     background-size: cover;
     width: 452px;
@@ -431,5 +539,6 @@ nav.navbar-expand-lg {
     margin-top: 23px;
   }
 }
+
 // Secton Contact End
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,700');

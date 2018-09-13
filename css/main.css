@@ -145,12 +145,14 @@ nav.navbar-expand-lg {
 }
 
 .about-as__title,
-.works__title, .services__title {
+.works__title,
+.services__title {
   font-size: 38px;
 }
 
 .about-as__subtitle,
-.works__subtitle, .services__subtitle {
+.works__subtitle,
+.services__subtitle {
   font-size: 18px;
   color: #5e5f5f;
   text-transform: uppercase;
@@ -180,108 +182,185 @@ nav.navbar-expand-lg {
   z-index: 3;
 }
 
-.services {
-  padding-top: 125px;
+.black-block-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.home_dietitian {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 13px;
+.holder {
+  margin-bottom: 10px;
 }
 
-.home_dietitian img:hover + .popup__home_dietitian {
-  display: block;
-}
-
-.popup__home_dietitian {
-  display: none;
-  position: absolute;
-  top: 0;
-  background: #71f5ea;
+.big-img1 {
+  position: relative;
+  background: url(../img/home_dietitian_sectionbg_1.jpg) no-repeat center;
+  background-size: cover;
   width: 653px;
   height: 420px;
 }
 
-.popup__home_dietitian .popup__home_dietitian__title {
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  text-align: inherit;
+.big-img1 .block {
+  background: #71f6eb;
+}
+
+.big-img1 .block h4 {
   margin-top: 63px;
-  margin-left: 60px;
+  margin-left: 68px;
 }
 
-.popup__home_dietitian .popup__home_dietitian__subtitle {
-  width: 474px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: #3b3937;
-  text-align: justify;
-  margin-left: 60px;
+.big-img1 .block p {
+  margin-left: 68px;
+  width: 468px;
 }
 
-.popup__home_dietitian .popup__home_dietitian__close {
-  display: block;
-  width: 17px;
-  height: 17px;
-  margin-top: 75px;
-  margin-left: 60px;
-}
-
-.block2 img:hover + .popup__block2 {
-  display: block;
-}
-
-.block2 .popup__block2 {
-  display: none;
-  position: absolute;
+.small-img1 {
+  position: relative;
+  background: url(../img/img-9.jpg) no-repeat center;
+  background-size: cover;
   width: 472px;
-  min-height: 420px;
-  top: 0;
-  color: white;
-  text-align: inherit;
-  background: rgba(0, 0, 0, 0.6);
+  height: 420px;
 }
 
-.block2 .popup__block2 h4 {
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: inherit;
+.small-img1 h4 {
   margin-left: 67px;
   margin-top: 184px;
 }
 
-.block2 .popup__block2 p {
+.small-img1 p {
+  width: 310px;
+  margin-left: 67px;
+  margin-bottom: 47px;
+}
+
+.small-img1 a {
+  display: block;
+  margin-left: 67px;
+}
+
+.big-img2 {
+  position: relative;
+  background: url(../img/griego3_1x.jpg) no-repeat center;
+  background-size: cover;
+  width: 653px;
+  height: 420px;
+}
+
+.big-img2 h4 {
+  margin-top: 165px;
+  margin-left: 65px;
+}
+
+.big-img2 p {
+  width: 390px;
+  margin-left: 65px;
+  margin-bottom: 45px;
+}
+
+.big-img2 a {
+  margin-left: 65px;
+}
+
+.small-img2 {
+  position: relative;
+  background: url(../img/careers-00.jpg) no-repeat center;
+  background-size: cover;
+  width: 472px;
+  height: 420px;
+}
+
+.small-img2 h4 {
+  margin-top: 164px;
+  margin-left: 66px;
+}
+
+.small-img2 p {
+  width: 310px;
+  margin-left: 66px;
+  margin-bottom: 47px;
+}
+
+.small-img2 a {
+  margin-left: 66px;
+}
+
+.small-img3 {
+  position: relative;
+  background: url(../img/griego4_1x.jpg) no-repeat center;
+  background-size: cover;
+  width: 472px;
+  height: 420px;
+}
+
+.small-img3 h4 {
+  margin-left: 64px;
+  margin-top: 130px;
+}
+
+.small-img3 p {
+  width: 276px;
+  margin-left: 64px;
+  margin-bottom: 58px;
+}
+
+.small-img3 a {
+  margin-left: 64px;
+}
+
+.big-img3 {
+  position: relative;
+  background: url(../img/blog-3.jpg) no-repeat center;
+  background-size: cover;
+  width: 653px;
+  height: 420px;
+}
+
+.big-img3 h4 {
+  margin-top: 130px;
+  margin-left: 69px;
+}
+
+.big-img3 p {
+  margin-left: 69px;
+  width: 390px;
+  margin-bottom: 59px;
+}
+
+.big-img3 a {
+  margin-left: 69px;
+}
+
+.block {
+  position: absolute;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.block h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  text-align: inherit;
+}
+
+.block p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   text-align: inherit;
-  margin-left: 67px;
 }
 
-.block2 .popup__block2 a {
+.block a {
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   text-transform: uppercase;
-  color: white;
-  margin-left: 67px;
 }
 
-.block2 .popup__block2 a::after {
-  position: relative;
-  content: url(../img/arow-right.png);
-  width: 22px;
-  height: 15px;
-  left: 20px;
-}
-
-.griego {
-  padding: 0;
-}
-
-.griego img {
-  background: #e2e2e2;
-  width: 665px;
+.holder:hover .block {
+  display: block;
 }
 
 .more-logos-row a {
@@ -369,7 +448,8 @@ nav.navbar-expand-lg {
   margin-top: 46px;
 }
 
-.contact .contact__left .contact_form input, .contact .contact__left .contact_form textarea {
+.contact .contact__left .contact_form input,
+.contact .contact__left .contact_form textarea {
   width: 100%;
   height: 45px;
   padding-left: 4px;
@@ -380,22 +460,26 @@ nav.navbar-expand-lg {
   color: white;
 }
 
-.contact .contact__left .contact_form input::-webkit-input-placeholder, .contact .contact__left .contact_form textarea::-webkit-input-placeholder {
+.contact .contact__left .contact_form input::-webkit-input-placeholder,
+.contact .contact__left .contact_form textarea::-webkit-input-placeholder {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }
 
-.contact .contact__left .contact_form input:-ms-input-placeholder, .contact .contact__left .contact_form textarea:-ms-input-placeholder {
+.contact .contact__left .contact_form input:-ms-input-placeholder,
+.contact .contact__left .contact_form textarea:-ms-input-placeholder {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }
 
-.contact .contact__left .contact_form input::-ms-input-placeholder, .contact .contact__left .contact_form textarea::-ms-input-placeholder {
+.contact .contact__left .contact_form input::-ms-input-placeholder,
+.contact .contact__left .contact_form textarea::-ms-input-placeholder {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }
 
-.contact .contact__left .contact_form input::placeholder, .contact .contact__left .contact_form textarea::placeholder {
+.contact .contact__left .contact_form input::placeholder,
+.contact .contact__left .contact_form textarea::placeholder {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }
