@@ -192,7 +192,11 @@ nav.navbar-expand-lg {
 
 // Works End
 
-// new start
+// new start service
+.services {
+  margin-bottom: 124px;
+}
+
 .black-block-row {
   display: flex;
   flex-wrap: wrap;
@@ -217,11 +221,13 @@ nav.navbar-expand-lg {
     h4 {
       margin-top: 63px;
       margin-left: 68px;
+      color: black;
     }
 
     p {
       margin-left: 68px;
       width: 468px;
+      color: black;
     }
   }
 }
@@ -236,6 +242,7 @@ nav.navbar-expand-lg {
   h4 {
     margin-left: 67px;
     margin-top: 184px;
+    color: black;
   }
 
   p {
@@ -247,6 +254,7 @@ nav.navbar-expand-lg {
   a {
     display: block;
     margin-left: 67px;
+
 
   }
 }
@@ -356,17 +364,26 @@ nav.navbar-expand-lg {
     font-family: 'Merriweather', serif;
     font-size: 20px;
     text-align: inherit;
+    color: #f1f1f1;
   }
 
   p {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-align: inherit;
+    color: #f1f1f1;
   }
 
   a {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    color: #dadcdc;
+
+    &::after {
+      content: url(../img/arow-right.png);
+      position: relative;
+      margin-left: 20px;
+    }
   }
 }
 
@@ -376,9 +393,144 @@ nav.navbar-expand-lg {
 
 // new end
 
+// team start
+.team {
+  padding-top: 122px;
+  padding-bottom: 118px;
+
+  .team__title {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+  }
+
+  .team__subtitle {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #616161;
+    margin-bottom: 120px;
+  }
+
+  .team-row {
+    .team-worker {
+
+      .team-worker__img {
+        margin-bottom: 10px;
+
+        img {
+          width: 370px;
+          height: 441px;
+        }
+
+      }
+    }
+  }
+}
+
+
+// team end
+
+// section reviews start
+.reviews {
+  height: 923px;
+
+  .reviews__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: 119px;
+  }
+
+  .reviews__subtitle {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #616161;
+    margin-bottom: 135px;
+  }
+
+  .podlojka {
+    margin-top: 0px;
+    background: url('../img/podlojka1.png');
+    width: 390px;
+    height: 362px;
+
+    .carousel-slide {
+      padding-bottom: -36px;
+    }
+
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+
+      input[type=checkbox] {
+        margin-right: 3px;
+       
+
+      }
+      
+    }
+
+  }
+
+  .carousel-inner {
+    padding-bottom: 36px;
+    top: -30px;
+
+    .carousel-item {
+
+      img {
+        display: flex;
+        width: 320px;
+        height: 410px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+}
+
+.reviews__right {
+  width: 666px;
+  height: 362px;
+  background: #eaebed;
 
 
 
+  .reviews__right-title {
+    margin-top: 101px;
+    margin-bottom: -10px;
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    font-weight: bold;
+
+    span {
+      font-family: 'Merriweather', serif;
+      color: #99999a;
+      font-size: 15px;
+    }
+
+  }
+
+  .reviews__right-subtitle {
+    margin-left: 86px;
+    margin-bottom: 33px;
+    width: 502px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #99999a;
+    text-align: center;
+  }
+
+ 
+}
+
+
+
+// section reviews end
 
 // Icon Sprite Start
 .more-logos-row {
@@ -386,7 +538,12 @@ nav.navbar-expand-lg {
     display: block;
     margin: 0 auto;
   }
-
+.more-logos-top{
+  margin-bottom: 85px;
+}
+.more-logos-bottom{
+  margin-bottom: 120px;
+}
   .icon {
     width: 128px;
     height: 68px;
@@ -449,6 +606,7 @@ nav.navbar-expand-lg {
   height: 710px;
   background: url(../img/christmas_snow_trees-wide.png) no-repeat center;
   background-size: cover;
+  margin-top: 119px;
   z-index: -1;
 
   .contact__left {
@@ -541,4 +699,46 @@ nav.navbar-expand-lg {
 }
 
 // Secton Contact End
+
+// footer start
+.footer{
+  height: 312px;
+  background: #262b2e;
+  h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #d4d5d5;
+    font-weight: 200;
+    padding-top: 93px;
+  }
+
+  p{
+    margin-top: 43px;
+    font-family: 'Raleway', sans-serif;
+    color: #d4d5d5;
+    font-size: 16px;
+  }
+}
+
+.footer-icon{
+  margin-top: 19px;
+  font-size: 24px;
+  text-align: center;
+  
+
+  i{
+    width: 45px;
+    height: 40px;
+    padding-top: 8px;
+    color: #bbb8b9;
+    background: #424648;
+    &:hover{
+      background: #6eeee4;
+      color: black;
+    }
+  }
+}
+
+// footer end
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,700');
