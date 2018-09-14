@@ -1,0 +1,12 @@
+@media only screen and (max-width: 320px) {
+  .btn-title {
+    margin-top: 3.333em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .juice-glass {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */
