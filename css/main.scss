@@ -1,27 +1,3 @@
-@mixin small {
-  @media only screen and(max-width: 320px) {
-    @content;
-  }
-}
-
-@mixin phone {
-  @media only screen and(max-width: 460px) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media only screen and(max-width: 540px) {
-    @content;
-  }
-}
-
-@mixin large {
-  @media only screen and(max-width: 990px) {
-    @content;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -56,7 +32,6 @@ p {
   font-size: 1.125em;
 }
 
-
 // Header start
 .header {
   padding-bottom: 76px;
@@ -70,9 +45,8 @@ p {
     width: 225px;
     height: 53px;
     border: 2px solid #777879;
+    cursor: pointer;
   }
-
- 
 }
 
 .juice-glass {
@@ -84,15 +58,15 @@ p {
   margin-bottom: 76px;
 }
 
-
-
-
 nav.navbar-expand-lg {
   align-items: end;
   height: 112px;
 
+  .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.963em;
+  }
 }
-
 
 .header-title {
   margin-top: 193px;
@@ -110,14 +84,14 @@ nav.navbar-expand-lg {
 // About Us Start
 .about-as {
   margin-top: 7.167em;
+
   // min-height: 985px;
   height: 54.722em;
-
 
   .about-as__left {
     .podlojka {
       margin-top: 10.111em;
-      background: url('../img/podlojka1.png');
+      background: url("../img/podlojka1.png");
       width: 26.611em;
       height: 22.889em;
 
@@ -144,38 +118,29 @@ nav.navbar-expand-lg {
       }
     }
 
-
-   
-
     .carousel-inner {
       padding-bottom: 36px;
       top: -30px;
 
       .carousel-item {
-
         img {
           display: flex;
-          width: 395px;
+          width: 24.688em;
           margin: 0 auto;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-
-       
       }
     }
   }
-
- 
 }
 
 .about-as__right {
   margin-top: 149px;
 
-
   .about-as__right__first-title,
   .about-as__right__second-title {
     font-family: 'Merriweather', serif;
-    font-size: 20px;
+    font-size: 1.250em;
     font-weight: bold;
     color: #3e3f3f;
     text-align: left;
@@ -195,14 +160,10 @@ nav.navbar-expand-lg {
   }
 }
 
-
-
-
 .about-as__title,
 .works__title,
 .services__title {
   font-size: 2.111em;
-
 }
 
 .about-as__subtitle,
@@ -218,10 +179,10 @@ nav.navbar-expand-lg {
 
 // Works Start
 .works {
-  margin-bottom: 122px;
+  margin-bottom: 7.625em;
 
   .container {
-    margin-top: 122px;
+    margin-top: 7.625em;
   }
 
   .works-row {
@@ -231,65 +192,71 @@ nav.navbar-expand-lg {
     }
 
     .img-1 {
-      width: 365px;
-      height: 360px;
-      background: url(../img/1x6.png)no-repeat center;
+      width: 22.813em;
+      height: 22.500em;
+      background: url(../img/1x6.png) no-repeat center;
       background-size: contain;
+
+      .holder {
+        width: 21.1em;
+        left: 0.01em;
+      }
     }
 
     .img-2 {
-      width: 365px;
-      height: 360px;
-      background: url(../img/2x6.png)no-repeat center;
+      width: 22.813em;
+      height: 22.500em;
+      background: url(../img/2x6.png) no-repeat center;
       background-size: contain;
 
-      .holder {
-        width: 95%;
-        right: 10px;
-      }
+
     }
 
     .img-3 {
-      width: 365px;
-      height: 360px;
-      background: url(../img/3x6.png)no-repeat center;
-      background-size: cover;
-
+      width: 22.813em;
+      height: 22.500em;
+      background: url(../img/3x6.png) no-repeat center;
+      background-size: contain;
     }
 
     .img-4 {
-      width: 365px;
-      height: 360px;
-      background: url(../img/4x6.png)no-repeat center;
-      background-size: contain;
-    }
-
-    .img-5 {
-      width: 365px;
-      height: 360px;
-      background: url(../img/5x6.png)no-repeat center;
+      width: 22.813em;
+      height: 22.500em;
+      background: url(../img/4x6.png) no-repeat center;
       background-size: contain;
 
       .holder {
-        width: 95%;
-        right: 10px;
+        width: 21.1em;
+        left: 0.01em;
       }
     }
 
+    .img-5 {
+      width: 22.813em;
+      height: 22.500em;
+      background: url(../img/5x6.png) no-repeat center;
+      background-size: contain;
+    }
+
     .img-6 {
-      width: 365px;
-      height: 360px;
-      background: url(../img/6x6.png)no-repeat center;
+      width: 22.813em;
+      height: 22.500em;
+      background: url(../img/6x6.png) no-repeat center;
       background-size: contain;
 
+      .holder {
+        width: 21.1em;
+        left: 0.01em;
+      }
     }
 
     .holder {
       display: none;
       position: absolute;
-      right: 5px;
-      width: 97%;
-      height: 100%;
+      top: 0.9em;
+      right: 0.3em;
+      width: 20.533em;
+      height: 20.600em;
       background: rgba(0, 0, 0, 0.6);
       background-size: contain;
     }
@@ -298,18 +265,16 @@ nav.navbar-expand-lg {
       display: block;
     }
   }
-
-
 }
 
 // Works End
 
 // new start service
 .services {
-  padding-top: 124px;
+  padding-top: 7.750em;
 
   .services__subtitle {
-    margin-bottom: 120px;
+    margin-bottom: 7.500em;
   }
 }
 
@@ -317,6 +282,7 @@ nav.navbar-expand-lg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   // margin-bottom: 10px;
 }
 
@@ -326,23 +292,23 @@ nav.navbar-expand-lg {
 
 .big-img1 {
   position: relative;
-  background: url(../img/home_dietitian_sectionbg_1.jpg)no-repeat center;
+  background: url(../img/home_dietitian_sectionbg_1.jpg) no-repeat center;
   background-size: cover;
-  width: 653px;
-  height: 420px;
+  width: 40.813em;
+  height: 26.250em;
 
   .block {
     background: #71f6eb;
 
     h4 {
-      margin-top: 63px;
-      margin-left: 68px;
+      margin-top: 3.938em;
+      margin-left: 4.250em;
       color: black;
     }
 
     p {
-      margin-left: 68px;
-      width: 468px;
+      margin-left: 4.250em;
+      width: 29.250em;
       color: black;
     }
   }
@@ -350,58 +316,55 @@ nav.navbar-expand-lg {
 
 .small-img1 {
   position: relative;
-  background: url(../img/img-9.jpg)no-repeat center;
+  background: url(../img/img-9.jpg) no-repeat center;
   background-size: cover;
   width: 472px;
   height: 420px;
 
   h4 {
-    margin-left: 67px;
-    margin-top: 184px;
+    margin-left: 4.188em;
+    margin-top: 11.500em;
     color: black;
   }
 
   p {
     width: 310px;
-    margin-left: 67px;
+    margin-left: 4.188em;
     margin-bottom: 47px;
   }
 
   a {
     display: block;
     margin-left: 67px;
-
-
   }
 }
 
 .big-img2 {
   position: relative;
-  background: url(../img/griego3_1x.jpg)no-repeat center;
+  background: url(../img/griego3_1x.jpg) no-repeat center;
   background-size: cover;
   width: 653px;
   height: 420px;
 
   h4 {
     margin-top: 165px;
-    margin-left: 65px;
+    margin-left: 4.063em;
   }
 
   p {
-    width: 390px;
-    margin-left: 65px;
+    width: 24.375em;
+    margin-left: 4.063em;
     margin-bottom: 45px;
   }
 
   a {
-    margin-left: 65px;
-
+    margin-left: 4.063em;
   }
 }
 
 .small-img2 {
   position: relative;
-  background: url(../img/careers-00.jpg)no-repeat center;
+  background: url(../img/careers-00.jpg) no-repeat center;
   background-size: cover;
   width: 472px;
   height: 420px;
@@ -424,7 +387,7 @@ nav.navbar-expand-lg {
 
 .small-img3 {
   position: relative;
-  background: url(../img/griego4_1x.jpg)no-repeat center;
+  background: url(../img/griego4_1x.jpg) no-repeat center;
   background-size: cover;
   width: 472px;
   height: 420px;
@@ -445,10 +408,9 @@ nav.navbar-expand-lg {
   }
 }
 
-
 .big-img3 {
   position: relative;
-  background: url(../img/blog-3.jpg)no-repeat center;
+  background: url(../img/blog-3.jpg) no-repeat center;
   background-size: cover;
   width: 653px;
   height: 420px;
@@ -515,7 +477,6 @@ nav.navbar-expand-lg {
   padding-bottom: 118px;
 
   .team__title {
-
     font-family: 'Montserrat', sans-serif;
     font-size: 38px;
   }
@@ -530,7 +491,6 @@ nav.navbar-expand-lg {
 
   .team-row {
     .team-worker {
-
       .team-worker__img {
         margin-bottom: 10px;
 
@@ -538,12 +498,10 @@ nav.navbar-expand-lg {
           width: 370px;
           height: 441px;
         }
-
       }
     }
   }
 }
-
 
 // team end
 
@@ -568,7 +526,7 @@ nav.navbar-expand-lg {
 
   .podlojka {
     margin-top: 0px;
-    background: url('../img/podlojka1.png');
+    background: url("../img/podlojka1.png");
     width: 390px;
     height: 362px;
 
@@ -593,7 +551,6 @@ nav.navbar-expand-lg {
     ol.carousel-indicators li.active {
       background: #71f6eb;
     }
-
   }
 
   .carousel-inner {
@@ -601,7 +558,6 @@ nav.navbar-expand-lg {
     top: -30px;
 
     .carousel-item {
-
       img {
         display: flex;
         width: 320px;
@@ -618,8 +574,6 @@ nav.navbar-expand-lg {
   height: 362px;
   background: #eaebed;
 
-
-
   .reviews__right-title {
     margin-top: 101px;
     margin-bottom: -10px;
@@ -632,7 +586,6 @@ nav.navbar-expand-lg {
       color: #99999a;
       font-size: 15px;
     }
-
   }
 
   .reviews__right-subtitle {
@@ -644,11 +597,7 @@ nav.navbar-expand-lg {
     color: #99999a;
     text-align: center;
   }
-
-
 }
-
-
 
 // section reviews end
 
@@ -670,8 +619,9 @@ nav.navbar-expand-lg {
   .icon {
     width: 128px;
     height: 68px;
+
     // float: left;
-    background: url(../img/more_logos_b.png)no-repeat;
+    background: url(../img/more_logos_b.png) no-repeat;
   }
 
   .logo-rko-top {
@@ -679,7 +629,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -1020px 0px;
     }
   }
@@ -689,7 +639,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -607px 0;
     }
   }
@@ -699,7 +649,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -811px 0;
     }
   }
@@ -709,7 +659,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: 0 0;
     }
   }
@@ -719,7 +669,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -200px 0;
     }
   }
@@ -729,7 +679,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -405px 0;
     }
   }
@@ -739,7 +689,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -607px 0;
     }
   }
@@ -749,7 +699,7 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -811px 0;
     }
   }
@@ -759,14 +709,13 @@ nav.navbar-expand-lg {
     cursor: pointer;
 
     &:hover {
-      background: url(../img/more_logos.png)no-repeat;
+      background: url(../img/more_logos.png) no-repeat;
       background-position: -1020px 0px;
     }
   }
 }
 
 // Icon Sprite End
-
 
 // Secton Contact Start
 .contact {
@@ -805,7 +754,6 @@ nav.navbar-expand-lg {
         background: transparent;
         color: white;
 
-
         &::placeholder {
           font-family: 'Raleway', sans-serif;
           font-size: 15px;
@@ -831,13 +779,9 @@ nav.navbar-expand-lg {
       border: 0;
       border-radius: 2px;
       text-transform: uppercase;
-
-     
     }
   }
 }
-
-
 
 .contact__right {
   width: 500px;
@@ -898,7 +842,6 @@ nav.navbar-expand-lg {
   font-size: 24px;
   text-align: center;
 
-
   i {
     width: 45px;
     height: 40px;
@@ -915,4 +858,6 @@ nav.navbar-expand-lg {
 
 // footer end
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,700');
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,700");
+
+@import "media";
